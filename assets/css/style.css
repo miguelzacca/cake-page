@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Satisfy&family=Sunflower:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root {
+  --header-height: 8rem;
+  --black-text-color: #594a42;
+  --white-text-color: #d9ccad;
+  --pink-color: #f8af99;
+  --gold-color: #f7d06dbb;
+  --small-text-size: 1.6rem;
+  --regular-text-size: 1.8rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.ident {
+  font-family: "Satisfy";
+}
+
+.white {
+  font-family: "Lato";
+  color: var(--black-text-color);
+}
+
+.black,
+a {
+  font-family: "Sunflower";
+  color: var(--black-text-color);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+}
+
+header ul {
+  gap: 2rem;
+}
+
+header h2 {
+  font-size: 2.1rem;
+}
+
+header nav {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 7.5rem;
+}
+
+header a {
+  padding: 0.7rem 1.2rem;
+  font-size: var(--regular-text-size);
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+#home {
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  background-color: var(--pink-color);
+  position: absolute;
+  top: calc(50% + 5rem);
+  transform: translateY(-50%);
+  left: 0;
+  opacity: 0.5;
+  width: 50rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(150px);
+}
+
+#home::after {
+  content: "";
+  background-color: var(--gold-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  width: 30rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(100px);
+}
+
+#home img:first-child {
+  width: calc(50% - 5rem);
+  position: absolute;
+  top: calc(50% + 2rem);
+  aspect-ratio: 1.75;
+  transform: translate(-10%, -50%);
+}
+
+#home .container {
+  margin-left: auto;
+  align-items: end;
+  margin-right: 15rem;
+  gap: 3rem;
+}
+
+#home h1,
+#home p {
+  text-align: end;
+  max-width: 40rem;
+}
+
+#home h1 {
+  font-size: 5.5rem;
+  letter-spacing: 0.3rem;
+  max-width: 50rem;
+}
+
+#home p {
+  font-size: var(--regular-text-size);
+}
+
+#home .btn-container {
+  gap: 2rem;
+  justify-content: end;
+}
+
+#home a {
+  padding: 1rem 2rem;
+  font-size: var(--regular-text-size);
+  border-radius: 2.5rem;
+}
+
+#home a:first-child {
+  background-color: var(--gold-color);
+  padding: 1.3rem 2.3rem;
+}
+
+#home a:last-child {
+  border: 0.2rem solid var(--black-text-color);
+}
