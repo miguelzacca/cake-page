@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Satisfy&family=Sunflower:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Satisfy&family=Merienda:wght@300..900&display=swap");
 
 * {
   margin: 0;
@@ -33,6 +33,13 @@ ul li {
   list-style: none;
 }
 
+.vertical-line {
+  height: 8rem;
+  margin: 0 3rem;
+  width: 0.2rem;
+  background-color: #594a42c7;
+}
+
 .flex {
   display: flex;
 }
@@ -47,7 +54,11 @@ ul li {
 }
 
 .ident {
-  font-family: "Satisfy";
+  font-family: "Satisfy", cursive !important;
+}
+
+.ident2 {
+  font-family: "Merienda", cursive !important;
 }
 
 .white {
@@ -57,8 +68,9 @@ ul li {
 
 .black,
 a {
-  font-family: "Sunflower";
+  font-family: "Lato";
   color: var(--black-text-color);
+  font-weight: 700;
 }
 
 header {
@@ -74,7 +86,7 @@ header ul {
 }
 
 header h2 {
-  font-size: 2.1rem;
+  font-size: 2.6rem;
 }
 
 header nav {
@@ -107,7 +119,7 @@ section {
   transform: translateY(-50%);
   left: 0;
   opacity: 0.5;
-  width: 50rem;
+  width: 55rem;
   aspect-ratio: 1;
   border-radius: 50%;
   z-index: -1;
@@ -120,7 +132,8 @@ section {
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(50%, -50%);
+  opacity: 0.5;
+  transform: translate(25%, -25%);
   width: 30rem;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -132,7 +145,7 @@ section {
   width: calc(50% - 5rem);
   position: absolute;
   top: calc(50% + 2rem);
-  aspect-ratio: 1.75;
+  aspect-ratio: 1.6;
   transform: translate(-10%, -50%);
 }
 
@@ -143,16 +156,20 @@ section {
   gap: 3rem;
 }
 
-#home h1,
+#home h1 {
+  text-align: end;
+  max-width: 50rem;
+  line-height: 8rem;
+}
+
 #home p {
   text-align: end;
   max-width: 40rem;
 }
 
 #home h1 {
-  font-size: 5.5rem;
-  letter-spacing: 0.3rem;
-  max-width: 50rem;
+  font-size: 6rem;
+  max-width: 60rem;
 }
 
 #home p {
@@ -177,4 +194,21 @@ section {
 
 #home a:last-child {
   border: 0.2rem solid var(--black-text-color);
+}
+
+#menu {
+  align-items: center;
+  gap: 5rem;
+  padding: 5rem 0;
+}
+
+#menu .text-container h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+#menu .text-container p {
+  max-width: 45rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
 }
