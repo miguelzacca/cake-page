@@ -35,7 +35,7 @@ ul li {
 
 .vertical-line {
   height: 8rem;
-  margin: 0 3rem;
+  margin: 0 5rem;
   width: 0.2rem;
   background-color: #594a42c7;
 }
@@ -111,28 +111,30 @@ section {
   align-items: center;
 }
 
-#home::before {
+#home::before,
+#about::before {
   content: "";
   background-color: var(--pink-color);
   position: absolute;
-  top: calc(50% + 5rem);
+  top: calc(50% + 15rem);
   transform: translateY(-50%);
   left: 0;
-  opacity: 0.5;
+  opacity: 0.3;
   width: 55rem;
-  aspect-ratio: 1;
+  aspect-ratio: 0.9;
   border-radius: 50%;
   z-index: -1;
   filter: blur(150px);
 }
 
-#home::after {
+#home::after,
+#about::after {
   content: "";
   background-color: var(--gold-color);
   position: absolute;
   top: 0;
   right: 0;
-  opacity: 0.5;
+  opacity: 0.4;
   transform: translate(25%, -25%);
   width: 30rem;
   aspect-ratio: 1;
@@ -203,12 +205,120 @@ section {
 }
 
 #menu .text-container h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 800;
+  text-align: end;
+  flex: 1;
 }
 
 #menu .text-container p {
-  max-width: 45rem;
+  max-width: 42rem;
   font-size: 1.5rem;
   font-weight: lighter;
+  flex: 1;
+}
+
+#menu .container {
+  gap: 3rem;
+}
+
+#menu .container img:first-child {
+  width: 20rem;
+  aspect-ratio: 0.7;
+  border-radius: 2.5rem;
+  filter: drop-shadow(2px 0px 3px #00000050);
+}
+
+#menu .container img:last-child {
+  width: 12rem;
+  margin-top: -1rem;
+}
+
+#menu .container .product {
+  gap: 2rem;
+}
+
+#menu .container .product h3 {
+  font-size: var(--regular-text-size);
+}
+
+#menu a {
+  font-size: var(--small-text-size);
+  gap: 1rem;
+  height: 3rem;
+}
+
+a img {
+  width: 2.1rem;
+  filter: invert(0.5);
+}
+
+#about {
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 10rem;
+  position: relative;
+}
+
+#about img:not(a img) {
+  width: 40rem;
+  height: 27rem;
+  opacity: 0.8;
+  border-radius: 2.5rem;
+}
+
+#about .container1,
+#about .container2 {
+  gap: 6rem;
+  height: min-content;
+}
+
+#about .container1 div,
+#about .container2 div {
+  align-items: end;
+  gap: 2rem;
+  position: relative;
+  height: 100%;
+}
+
+#about a {
+  margin-top: 2rem;
+  font-size: var(--small-text-size);
+  gap: 1rem;
+}
+
+#about .container1 div h2,
+#about .container2 div h2 {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  font-weight: 800;
+  text-align: end;
+  width: 100%;
+  max-width: 35rem;
+}
+
+#about .container1 div p,
+#about .container2 div p {
+  text-align: end;
+  font-weight: 400;
+  width: 100%;
+  max-width: 37rem;
+  font-size: var(--small-text-size);
+}
+
+#about .container2 div {
+  align-items: start;
+}
+
+#about .container2 div h2 {
+  text-align: start;
+  width: 100%;
+}
+
+#about .container2 a {
+  margin-top: -0.5rem;
+}
+
+#about .container2 div p {
+  text-align: start;
 }
