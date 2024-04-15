@@ -1,1 +1,1 @@
-netlify: https://luckbakery.netlify.app
+netlify: https://lucybakery.netlify.app
