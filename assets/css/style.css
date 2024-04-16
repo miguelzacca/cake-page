@@ -209,13 +209,7 @@ section {
   }
 }
 
-div,
-h1,
-h2,
-h3,
-img,
-p,
-span {
+div {
   animation: 1ms ease-in-out drive;
   animation-range: cover 0% cover 40%;
   animation-timeline: view();
@@ -256,7 +250,6 @@ footer * {
   from {
     opacity: 0;
     transform: translateY(25%);
-    margin-inline: 2rem;
   }
 }
 
@@ -550,10 +543,10 @@ a img {
   top: 2rem;
   max-width: 20rem;
   gap: 1rem;
-  background-color: #ffe0d7;
+  background-color: #ffebe6;
   padding: 1.7rem;
   border-radius: 2rem;
-  box-shadow: 2px 0 10px #00000010;
+  box-shadow: 5px 0 10px #00000010;
 }
 
 #location .container h3 {
